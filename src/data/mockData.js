@@ -82,14 +82,14 @@ export const monthlyTradeData = [
 ]
 
 export const exportCategories = [
-  { name: '机电产品', value: 58.2, amount: 58980 },
-  { name: '高新技术产品', value: 26.8, amount: 27120 },
-  { name: '劳动密集型产品', value: 18.5, amount: 18720 },
-  { name: '农产品', value: 3.2, amount: 3240 },
-  { name: '汽车及零部件', value: 6.8, amount: 6880 },
-  { name: '新能源产品', value: 8.5, amount: 8600 },
-  { name: '医药产品', value: 2.8, amount: 2830 },
-  { name: '其他', value: 5.2, amount: 5260 }
+  { name: '机电产品', value: 45.5, amount: 46046 },
+  { name: '高新技术产品', value: 15.8, amount: 15990 },
+  { name: '劳动密集型产品', value: 18.2, amount: 18418 },
+  { name: '汽车及零部件', value: 6.5, amount: 6578 },
+  { name: '新能源产品', value: 5.2, amount: 5262 },
+  { name: '农产品', value: 3.0, amount: 3036 },
+  { name: '医药产品', value: 2.8, amount: 2834 },
+  { name: '其他', value: 3.0, amount: 3036 }
 ]
 
 export const newsFlash = [

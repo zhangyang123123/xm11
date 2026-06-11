@@ -54,7 +54,7 @@ const renderChart = () => {
   if (!chartInstance) return
 
   const data = provinceTradeData.map(item => ({
-    name: item.name.replace(/省|市|自治区|壮族|回族|维吾尔|特别行政区/g, ''),
+    name: item.name,
     value: item.export,
     export: item.export,
     import: item.import,

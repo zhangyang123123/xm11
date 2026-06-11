@@ -1,32 +1,35 @@
 <template>
-  <div class="dashboard-container">
-    <header class="dashboard-header">
-      <HeaderPanel />
-    </header>
+  <ScaleBox :width="1920" :height="1080">
+    <div class="dashboard-container">
+      <header class="dashboard-header">
+        <HeaderPanel />
+      </header>
 
-    <main class="dashboard-main">
-      <div class="col-left">
-        <ChinaMap :is-active="activePanel === 0" class="flex-1" />
-      </div>
+      <main class="dashboard-main">
+        <div class="col-left">
+          <ChinaMap :is-active="activePanel === 0" class="flex-1" />
+        </div>
 
-      <div class="col-center">
-        <SummaryCards :is-active="activePanel === 1" />
-      </div>
+        <div class="col-center">
+          <SummaryCards :is-active="activePanel === 1" />
+        </div>
 
-      <div class="col-right">
-        <TradePartners :is-active="activePanel === 2" class="flex-1" />
-      </div>
-    </main>
+        <div class="col-right">
+          <TradePartners :is-active="activePanel === 2" class="flex-1" />
+        </div>
+      </main>
 
-    <footer class="dashboard-footer">
-      <MonthlyChart :is-active="activePanel === 3" style="flex: 1.5" />
-      <CategoryPie :is-active="activePanel === 4" style="flex: 1" />
-    </footer>
-  </div>
+      <footer class="dashboard-footer">
+        <MonthlyChart :is-active="activePanel === 3" style="flex: 1.5" />
+        <CategoryPie :is-active="activePanel === 4" style="flex: 1" />
+      </footer>
+    </div>
+  </ScaleBox>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import ScaleBox from './components/ScaleBox.vue'
 import HeaderPanel from './components/HeaderPanel.vue'
 import ChinaMap from './components/ChinaMap.vue'
 import SummaryCards from './components/SummaryCards.vue'
